@@ -1,0 +1,388 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@500&family=Roboto:wght@500&display=swap');
+/* font-family: 'Oswald', sans-serif;
+font-family: 'Roboto', sans-serif; */
+*{
+    box-sizing: border-box;
+    font-weight: 500;
+    font-family: 'Roboto', sans-serif;
+}
+body{
+    width: 100%;
+    margin: 0;
+    background-color: #eee;
+}
+.container{
+    width: 1100px;
+    min-height: 600px;
+    background-color: #fff;
+    margin: auto;
+}
+.container header{
+    width: 100%;
+    height: 70px;
+    background-color: #000;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.container header .logo{
+    flex-basis: 20%;
+    height: 45px;
+}
+.container header nav{
+    flex-basis: 60%;
+    height: 45px;
+}
+.container header .cta{
+    flex-basis: 10%;
+    height: 45px;
+}
+.container a{
+    text-decoration: none;
+    color: #eee;
+}
+.container header .logo a{
+    font-family: 'Oswald', sans-serif;
+    font-size: 30px;
+    text-transform: uppercase;
+}
+.container header nav ul{
+    display: flex;
+    list-style-type: none;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+}
+.container header nav ul li a{
+    display: block;
+    padding: 10px 13px;
+    color: orange;
+    transition: all 0.3s ease-in 0s;
+}
+.container header nav ul li a:hover{
+    background-color: #eee;
+    border-radius: 6px;
+    color: #000;
+}
+.container header .cta a{
+    display: block;
+    width: 120px;
+    padding: 10px 13px;
+    background-color: rgb(36, 35, 35);
+    border-radius: 7px;
+    text-align: center;
+    transition: all 0.3s ease-in-out 0s;
+}
+.container header .cta a:hover{
+    background-color: rgb(59, 57, 57);
+}
+.container .slider{
+    width: 100%;
+    height: 550px;
+    background-image: url(../images/b3.jpg);
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.container .slider .content{
+    flex-basis: 60%;
+    text-align: center;
+    position: relative;
+    z-index: 9999;
+}
+.container .slider .overlay{
+    background-color: rgba(0, 0, 0, 0.4);
+    position: absolute;
+    width: 1100px;
+    height: 550px;
+}
+.container .slider .content h1{
+    font-family: 'Oswald', sans-serif;
+    font-size: 40px;
+    color: #fff;
+    text-transform: uppercase;
+}
+.container .slider .content p{
+    color: #fff;
+    font-size: 18px;
+    font-weight: 300;
+}
+.container .slider .content .btn{
+    width: 130px;
+    height: 45px;
+    background: transparent;
+    border: 1px solid #fff;
+    display: inline-block;
+    padding: 10px;
+    text-align: center;
+    cursor: pointer;
+}
+.container .display{
+    display: flex;
+}
+.container .display .right{
+    flex: 1;
+    height: 700px;
+    background-image: url(../images/ab1.jpg);
+    background-size: cover;
+    background-position: center;
+}
+.container .display .left{
+    flex: 1;
+    height: 700px;
+    display: flex;
+    flex-direction: column;
+}
+.container .display .left .left-a{
+    height: 350px;
+    padding: 20px 45px;
+}
+.container .display .left .left-a span{
+    display: inline-block;
+    width: 130px;
+    height: 50px;
+    background-color: #000;
+    cursor: pointer;
+    padding: 15px 10px;
+    text-align: center;
+}
+.container .display .left .left-a span a{
+    color: #fff;
+}
+.container .display .left .left-b{
+    background-image: url(../images/ab2.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 350px;
+}
+
+/* services starts here */
+
+  .container .services h1{
+    text-align: center;
+    text-transform: uppercase;
+ }
+
+ .hybrid-class h1{
+     color: white;
+     background-color: yellow;
+ }
+
+ .container .services{
+     width:100%;
+     height:auto;
+     text-align:center;
+     padding:30px;
+ }
+ .container .services .s-flex{
+     display:flex;
+     width: 80%;
+    height:auto;
+    align-items: center;
+    justify-content: space-between;
+    margin:0 auto;
+ }
+
+ .container .services .s-flex .services-main{
+     width:23%;
+     height: auto;
+ }
+
+ .container .services .s-flex .services-main .images-file{
+     width:100%;
+     height:auto;
+ }
+
+ .container .services .s-flex .services-main .images-file img{
+     width:100%;
+     height:auto;
+     display:block;
+ }
+
+ .container .services .s-flex .services-main .images-file .hybrid-class{
+     display: flex;
+     height:30px;
+     margin:0 auto;
+ }
+
+ .container .services .s-flex .services-main .images-file .hybrid-class i{
+     width:15%;
+     font-size:10px;
+     color: white;
+     background-color: black;
+     padding:10px 0;
+ }
+
+ .container .services .s-flex .services-main .images-file .hybrid-class h1{
+     font-size:12px;
+     margin:0;
+     width:70%;
+     padding:8px 0;
+ }
+
+ /* Team members starts here */
+
+ .container .team{
+     width:100%;
+     height:auto;
+ }
+
+ .projects h1{
+     text-transform: uppercase;
+ }
+ .container .team h1{
+    text-align: center;
+    text-transform: uppercase;
+ }
+
+ .container .team .t-flex{
+     display: flex;
+     width:80%;
+     height:auto;
+     margin:0 auto;
+     justify-content: space-between;
+     align-items: center;
+ }
+
+ .container .team .t-flex .valid-team{
+    width:23%;
+    height:auto; 
+ }
+
+ .container .team .t-flex .valid-team img{
+     width:100%;
+     display:block;
+     height:auto;
+ }
+
+ .container .valid-team p{
+     text-align: center;
+     margin: 4%;
+ }
+
+ .container .valid-team h1{
+     color: yellow;
+     margin: 2%;
+ }
+
+
+/* Stats section starts here */
+ 
+.container .stats{
+    width: 100%;
+    height: auto;   
+    background:url(../images/stats.jpg) no-repeat;
+    padding-top: 7%;
+    padding-bottom: 9%;
+    margin-top: 5%;
+    margin-bottom: 5%;
+    
+}
+
+.container .stats h1{
+    color: white;
+    text-align: center;
+    text-transform:uppercase;
+}
+
+.container img{
+    width:100%;
+     display:block;
+     height:auto;
+}
+
+.container .stats .valid  h1{
+    text-align: center;
+    text-transform: uppercase;
+    color: yellow;
+}
+
+.container .stats .s-flex{
+    width:80%;
+    display:flex;
+    margin:0 auto;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.container .stats .valid{
+    width:120px;
+    height:120px;
+    border-radius:100%;
+    border:1px solid #fff;
+    background:transparent;
+}
+.container .valid p{
+    text-align: center;
+    color: white;
+}
+
+/* Our Projects starts here */ 
+
+.container .projects{
+    width: 100%;
+    height: auto;
+    padding: 30px 80px;
+    text-align: center;
+}
+
+.container .projects .flex-box{
+    width: 100%;
+    height: auto; 
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.container .projects .flex-box img{
+    display: block;
+    width: 30%;
+    height: auto;
+    margin-bottom: 20px;
+    border: lightblue 2px solid;
+}
+
+/* Testimonial starts here */
+
+.container .testimonial{
+    background-color: yellow;
+    
+}
+
+.container h1{
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.container .pro-flex{
+    display: flex;
+    align-items: center;
+    margin: auto;
+    width: 100%;
+}
+
+.containern .pro-flex .image-t{
+    width: 45%;
+    height: 70%;
+}
+
+.container .proflex .testings{
+    margin-right: 25%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
